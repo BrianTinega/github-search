@@ -3,3 +3,15 @@ img {
   widows: 100px;
   height: 90px;
 }
+p {
+  font-family: 'Alata', sans-serif;
+  font-size: 25px;
+}
+.card {
+  background-color: brown;
+}
+.card-body {
+  background-color: black;
+  color: aliceblue;
+  margin-bottom: 0cm;
+}
