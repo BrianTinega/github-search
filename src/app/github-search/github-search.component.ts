@@ -8,21 +8,31 @@ import {GithubService} from '../service/github.service'
 })
 export class GithubSearchComponent implements OnInit {
  
+  profile:any;
+  repos:any;
 
-  constructor(private githubService:GithubService) { 
+  constructor(private githubService:GithubService, ) { 
+
     this.githubService.getprofileInfo().subscribe(profile =>{
-
+    
       console.log(profile)
-  })
+      this.profile = profile
+    });
+    this.githubService.getprofileRepos().subscribe(repo =>{
+    
+      console.log(repo)
+      this.repos = repo
+    });
+ 
     
   }
 
   ngOnInit(): void {
-     
+   
     
 
-    }
-   
+  }
+ 
   
   }
 

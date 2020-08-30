@@ -1,5 +1,26 @@
 <app-github-search-form></app-github-search-form>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <img src='{{profile.avatar_url}}' class="img-circle img-responsive">
+      <p>{{profile.login}}</p>
 
+      <p>Followers:{{profile.followers}}</p>
+      <P>Following:{{profile.following}}</P>
+      
+    </div>
+    <div class="col-md-6" *ngFor='let repo of repos'>
+      <p>
+        {{repo.name}}<a href='{repo.html_url}}' class="btn btn-warning" > View project</a> 
+
+      </p>
+     
+      </div>
+     
+  </div>
+  
+
+</div>
  
 
  
