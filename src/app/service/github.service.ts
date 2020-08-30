@@ -1,7 +1,8 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from '@angular/common/http'
 import {environment} from '../../environments/environment'
-import {User} from '../user'
+//import {User} from '../user'
+//import { TitleCasePipe } from '@angular/common';
 @Injectable({
   providedIn: 'root'
 })
@@ -9,9 +10,7 @@ import {User} from '../user'
 //private key = environment.accessToken
 
 export class GithubService {
-  private username: string;
-  name:string
-  avatar_url:string
+  private username:string
 
   constructor(private http:HttpClient) { 
     this.username='BrianTinega'
@@ -20,6 +19,9 @@ export class GithubService {
     return this.http.get("https://api.github.com/users/" +this.username + "?access_token=" + environment.accessToken)
   }
   getprofileRepos(){
-    return this.http.get("https://api.github.com/users/" +this.username + "/repos"+ "?access_token=" + environment.accessToken)
+    return this.http.get("https://api.github.com/users/" +this.username + "/repos" + "?access_token=" + environment.accessToken)
+  }
+  updateProfile(username:string){
+    this.username=username
   }
 }

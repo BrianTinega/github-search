@@ -7,7 +7,7 @@ import {AboutComponent} from './about/about.component'
 const routes: Routes = [
   { path: 'github-search', component: GithubSearchComponent},
   { path: 'about', component: AboutComponent},
-  
+ 
 ];
 
 @NgModule({

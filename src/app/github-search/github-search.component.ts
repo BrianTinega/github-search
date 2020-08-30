@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-//import { User} from '../user';
+
 import {GithubService} from '../service/github.service'
 @Component({
   selector: 'app-github-search',
@@ -10,9 +10,12 @@ export class GithubSearchComponent implements OnInit {
  
   profile:any;
   repos:any;
+  username:string
 
   constructor(private githubService:GithubService, ) { 
-
+  }
+  findProfile(){
+    this.githubService.updateProfile(this.username)
     this.githubService.getprofileInfo().subscribe(profile =>{
     
       console.log(profile)
@@ -23,8 +26,6 @@ export class GithubSearchComponent implements OnInit {
       console.log(repo)
       this.repos = repo
     });
- 
-    
   }
 
   ngOnInit(): void {

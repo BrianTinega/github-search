@@ -7,7 +7,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { GithubSearchComponent } from './github-search/github-search.component';
 
-import { GithubSearchFormComponent } from './github-search-form/github-search-form.component';
+
 import { NavigationBarComponent } from './navigation-bar/navigation-bar.component';
 import { AboutComponent } from './about/about.component';
 
@@ -16,7 +16,6 @@ import { AboutComponent } from './about/about.component';
     AppComponent,
     GithubSearchComponent,
     
-    GithubSearchFormComponent,
     NavigationBarComponent,
     AboutComponent
   ],
