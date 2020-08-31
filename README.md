@@ -1,6 +1,6 @@
 # {GithubSearch}
 ####  {31/082020}
-#### By **{Mick Brian Tinega }**[https://github.com/BrianTinega]
+#### By **[Mick Brian Tinega](https://github.com/BrianTinega)
 ## Description
 {An application that uses Github API to search for users repositories }
 
