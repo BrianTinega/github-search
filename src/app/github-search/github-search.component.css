@@ -1,18 +1,29 @@
 img {
-  border-radius: 50%;
-  widows: 100px;
-  height: 90px;
+  border-radius: 2cm;
+  width: 300px;
+  height: 250px;
+  margin-left:2cm;
 }
 p {
   font-family: 'Alata', sans-serif;
   font-size: 25px;
 }
-.card {
+.card h-100 card-body {
   background-color: brown;
+ 
 }
 .card-body {
-  background-color: black;
+  background-color: rgb(60, 87, 62);
   color: aliceblue;
-  margin-bottom: 0cm;
-  
+  margin-bottom: 2cm;
+  margin-left: 1cm;
+ 
+}
+.profile{
+  text-align: center;
+  margin-left: 7cm;
+}
+h1{
+  text-align:center;
+  background-color: brown
 }

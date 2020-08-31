@@ -10,6 +10,7 @@ import { GithubSearchComponent } from './github-search/github-search.component';
 
 import { NavigationBarComponent } from './navigation-bar/navigation-bar.component';
 import { AboutComponent } from './about/about.component';
+import { RepositoryComponent } from './repository/repository.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { AboutComponent } from './about/about.component';
     GithubSearchComponent,
     
     NavigationBarComponent,
-    AboutComponent
+    AboutComponent,
+    RepositoryComponent
   ],
   imports: [
     BrowserModule,
