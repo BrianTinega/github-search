@@ -1,4 +1,20 @@
-# GithubSearch
+# {GithubSearch}
+####  {31/082020}
+#### By **{Mick Brian Tinega }**
+## Description
+{An application that uses Github API to search for users repositories }
+
+## Known Bugs
+{There are no known bugs}
+## Technologies Used
+{Angular}
+## Support and contact details
+{briantinega @gmail.com}
+### License
+*{Determine the license under which this application can be used.  See below for more details on licensing.}*
+Copyright (c) {year} **{List of contributors or company name}**
+  
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.6.
 
